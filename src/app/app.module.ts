@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PostModule } from './feature/post/post.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    CoreModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CoreModule,
+    PostModule
   ],
   providers: [],
   bootstrap: [AppComponent]

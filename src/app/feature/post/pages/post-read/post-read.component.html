@@ -1,0 +1,40 @@
+
+<article class="container px-0">
+    <div class="row">
+        <div class="col-md-9">
+            <post-header
+                [title]="post.title"
+                [subtitle]="post.subtitle"
+                [created_at]="post.created_at"
+                [author]="post.author"
+                [keywords]="post.keywords"
+                [description]="post.introduction"
+            ></post-header>
+            <hr>
+            <post-body
+                [body]="post.body"
+            ></post-body>
+            <post-reference
+                [references]="post.references"
+            ></post-reference>
+            <hr>
+            <post-comment
+                [comments]="post.comments"
+            ></post-comment>
+        </div>
+        <div class="col-md-3">
+            <post-author-card></post-author-card>
+            <post-advertisement></post-advertisement>
+        </div>
+    </div>
+    <hr>
+    <div class="row g-3 mt-2">
+        <div class="col-md-6">
+            <post-login-others></post-login-others>
+        </div>
+        <div class="col-md-6">
+            <post-login-form></post-login-form>
+        </div>
+    </div>
+    <hr>
+</article>

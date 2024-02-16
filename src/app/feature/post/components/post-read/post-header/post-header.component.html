@@ -1,0 +1,7 @@
+<header class="blog-post">
+    <h1 class="display-5 link-body-emphasis mb-2">{{title}}</h1>
+    <h2 class="display-5 link-body-emphasis mb-2 fs-3">{{subtitle}}</h2>
+    <p class="blog-post-meta mb-2">{{created_at}} by <a href="#">Vinicius de Moraes Pachceco</a></p>
+    <span *ngFor="let keyword of keywords" class="badge text-bg-dark me-1">{{keyword}}</span>
+    <p class="mt-2">{{description}}</p>
+</header>

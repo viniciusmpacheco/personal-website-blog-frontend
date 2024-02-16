@@ -1,0 +1,4 @@
+<article class="blog-post">
+    <h2 class="display-6 link-body-emphasis mb-1">Bibliograph References</h2>
+    <p *ngFor="let reference of references">{{reference.author}}. {{reference.title}}. {{reference.edition}}. {{reference.city}}: {{reference.editor}}, {{reference.year}}. E-book. vol. {{reference.volume}}: {{reference.subtitle}}. Available from: {{reference.url}}. Accessed: {{reference.accessed}}.</p>
+</article>
