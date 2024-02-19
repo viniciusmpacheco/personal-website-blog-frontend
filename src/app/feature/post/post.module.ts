@@ -11,6 +11,9 @@ import { PostAuthorCardComponent } from './components/post-read/post-author-card
 import { PostAdvertisementComponent } from './components/post-read/post-advertisement/post-advertisement.component';
 import { PostLoginFormComponent } from './components/post-read/post-login-form/post-login-form.component';
 import { PostLoginOthersComponent } from './components/post-read/post-login-others/post-login-others.component';
+import { PostInfoComponent } from './pages/post-info/post-info.component';
+
+
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { PostLoginOthersComponent } from './components/post-read/post-login-othe
     PostAuthorCardComponent,
     PostAdvertisementComponent,
     PostLoginFormComponent,
-    PostLoginOthersComponent
+    PostLoginOthersComponent,
+    PostInfoComponent
   ],
   imports: [
     CommonModule,

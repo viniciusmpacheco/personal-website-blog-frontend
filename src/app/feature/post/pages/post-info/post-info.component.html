@@ -1,0 +1,111 @@
+<article class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb flex-column flex-md-row">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Technology</a></li>
+                  <li class="breadcrumb-item ms-3"><a href="#">Archtectural Migration and Integration</a></li>
+                </ol>
+            </nav>
+            <h1 class="fs-1">{{post.title}}</h1>
+            <h2 class="fs-4 fw-light mb-md-0 mb-3">{{post.subtitle}}</h2>
+            <div class="d-block d-md-none">
+                <h3 class="fs-5">Shared this post</h3>
+                <div class="flex-row justify-content-start mb-3">
+                    <i style="font-size: 26pt;" class="me-3 fa-brands fa-linkedin"></i>
+                    <i style="font-size: 26pt;" class="me-3 fa-brands fa-square-facebook"></i>
+                    <i style="font-size: 26pt;" class="me-3 fa-brands fa-instagram"></i>
+                    <i style="font-size: 26pt;" class="me-3 fa-brands fa-square-x-twitter"></i>
+                    <i style="font-size: 26pt;" class="me-3 fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <hr>
+            <h3 class="fs-5">Keywords</h3>
+            <div class="mb-4">
+                <a href="#" *ngFor="let keyword of post.keywords" class="text-decoration-none badge text-bg-dark me-1">{{keyword}}</a>
+            </div>
+            <h3 class="fs-5">Abstract</h3>
+            <p class="mb-4">{{post.introduction}} Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <h3 class="fs-5">Authors Resume</h3>
+            <div class="my-4 d-flex">
+                <img style="width: 9%; height: 9%;" class="img-fluid avatar avatar-md rounded-circle float-start me-3" src="https://hips.hearstapps.com/hmg-prod/images/matthew-mcconaughey-on-tuesday-september-12-2023-news-photo-1700243243.jpg?crop=0.513xw:0.769xh;0.152xw,0.0337xh&resize=1200:*" alt="avatar">
+                <div>
+                    <div class="mb-2">
+                        <h5 class="m-0">Vinicius de Moraes Pacheco</h5>
+                        <p class="me-3 mb-1 small">Cloud Archtect | DevOps and Application Developer</p>
+                        <p class="small">University Professor and Executive Director </p>
+                    </div>
+                    <div class="">
+                        <i class="fs-4 me-1 fa-brands fa-linkedin"></i>
+                        <i class="fs-4 me-1 fa-brands fa-square-facebook"></i>
+                        <i class="fs-4 me-1 fa-brands fa-instagram"></i>
+                        <i class="fs-4 me-1 fa-brands fa-square-x-twitter"></i>
+                        <i class="fs-4 me-1 fa-brands fa-stack-overflow"></i>
+                        <i class="fs-4 me-1 fa-brands fa-github"></i>
+                        <i class="fs-4 me-1 fa-brands fa-xing"></i>
+                        <i class="fs-4 me-1 fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="pt-3">
+                        <p class="m-0 fs-6"><strong>Associate's degree in Software Egineering:</strong> Faculdade de Tecnologia de São Paulo - FATEC-SP</p>
+                        <p class="m-0 fs-6"><strong>Technical's degree in Software Development:</strong> Escola Técnica de São Paulo - ETEC-SP</p>
+                        <p class="m-0 fs-6"><strong>Technical's degree in Accounting and Economy:</strong> Escola Técnica de São Paulo - ETEC-SP</p>
+                        <p class="m-0 fs-6"><strong>Professional degree in Electrical and Electronics Engineering:</strong> Serviço Nacional de Aprendizagem Industrial</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="fs-5">Reference</h3>
+            <div class="">
+                <p class="mb-4">BJORNENAK, T. (2000). Understanding cost differences in the public sector—a cost drivers approach. Management accounting research, 11(2), 193-211.Brandão, I. F. (2022). Modelo conceitual de sistema de informação de custos aplicado ao setor público brasileiro. Pensar Contábil, 24(84), 41-50.
+                <br><br>
+                BJORNENAK, T. (2000). Understanding cost differences in the public sector—a cost drivers approach. Management accounting research, 11(2), 193-211.Brandão, I. F. (2022). Modelo conceitual de sistema de informação de custos aplicado ao setor público brasileiro. Pensar Contábil, 24(84), 41-50.
+                <br><br>
+                BJORNENAK, T. (2000). Understanding cost differences in the public sector—a cost drivers approach. Management accounting research, 11(2), 193-211.Brandão, I. F. (2022). Modelo conceitual de sistema de informação de custos aplicado ao setor público brasileiro. Pensar Contábil, 24(84), 41-50.
+                </p>
+            </div>
+            <h3 class="fs-5">Related Articles</h3>
+            <div class="mb-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-solid fa-arrow-right"></i> 7 Key Questions to Ask when Architecting a Multicloud Network</a></li>
+                    <li class="nav-item"><a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-solid fa-arrow-right"></i> What is Cloud Computing and how that technology will changes the humankind</a></li>
+                    <li class="nav-item"><a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-solid fa-arrow-right"></i> O que é IA Generativa? GPT, ChatGPT e Midjourney | Alura</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-3 border-start">
+            <div class="pt-md-5">
+                <div class="d-none d-md-block">
+                    <h6>Shared this post</h6>
+                    <div class="flex-row justify-content-start mb-3">
+                        <i class="fs-2 me-2 fa-brands fa-linkedin"></i>
+                        <i class="fs-2 me-2 fa-brands fa-square-facebook"></i>
+                        <i class="fs-2 me-2 fa-brands fa-instagram"></i>
+                        <i class="fs-2 me-2 fa-brands fa-square-x-twitter"></i>
+                        <i class="fs-2 me-2 fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <h3 class="fs-6">Published at</h3>
+                <p class="mb-3">{{post.created_at}}</p>
+                <h3 class="fs-6">Edition</h3>
+                <p class="mb-3">3rd edition</p>
+                <h3 class="fs-6">Section</h3>
+                <p class="mb-3">Archtectural Migration and Integration</p>
+                <h3 class="fs-6">Location</h3>
+                <p class="mb-3">São Paulo, SP - Brazil</p>
+            </div>
+            <hr>
+            <div class="mb-4">
+                <h6>Download Files</h6>
+                <a href="#" class="me-1 mb-1 btn btn-outline-danger btn-sm rounded-0"><i class="fa-regular fa-file-pdf"></i> PDF</a>
+                <a href="#" class="me-1 mb-1 btn btn-outline-danger btn-sm rounded-0"><i class="fa-regular fa-file-pdf"></i> PDF (English)</a>
+                <a href="#" class="me-1 mb-1 btn btn-outline-primary btn-sm rounded-0"><i class="fa-regular fa-file-code"></i> HTML</a>
+                <a href="#" class="me-1 mb-1 btn btn-outline-primary btn-sm rounded-0"><i class="fa-regular fa-file-code"></i> HTML (English)</a>
+            </div>
+            <div>
+                <post-advertisement></post-advertisement>
+            </div>
+        </div>
+    </div>
+</article>
+<hr>
