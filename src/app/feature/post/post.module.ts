@@ -12,6 +12,14 @@ import { PostAdvertisementComponent } from './components/post-read/post-advertis
 import { PostLoginFormComponent } from './components/post-read/post-login-form/post-login-form.component';
 import { PostLoginOthersComponent } from './components/post-read/post-login-others/post-login-others.component';
 import { PostInfoComponent } from './pages/post-info/post-info.component';
+import { PostAbstractComponent } from './components/post-info/post-abstract/post-abstract.component';
+import { PostAuthorsResumeComponent } from './components/post-info/post-authors-resume/post-authors-resume.component';
+import { PostReferencesComponent } from './components/post-info/post-references/post-references.component';
+import { PostRelatedsComponent } from './components/post-info/post-relateds/post-relateds.component';
+import { PostInformationComponent } from './components/post-info/post-information/post-information.component';
+import { PostFilesComponent } from './components/post-info/post-files/post-files.component';
+import { PostPathComponent } from './components/post-info/post-path/post-path.component';
+import { PostInfoHeaderComponent } from './components/post-info/post-info-header/post-info-header.component';
 
 
 
@@ -23,11 +31,19 @@ import { PostInfoComponent } from './pages/post-info/post-info.component';
     PostCommentComponent,
     PostBodyComponent,
     PostHeaderComponent,
+    PostInfoHeaderComponent,
     PostAuthorCardComponent,
     PostAdvertisementComponent,
     PostLoginFormComponent,
     PostLoginOthersComponent,
-    PostInfoComponent
+    PostInfoComponent,
+    PostAbstractComponent,
+    PostAuthorsResumeComponent,
+    PostReferencesComponent,
+    PostRelatedsComponent,
+    PostInformationComponent,
+    PostFilesComponent,
+    PostPathComponent
   ],
   imports: [
     CommonModule,
